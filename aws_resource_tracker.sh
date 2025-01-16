@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # Author: Abhishek
-# Date: 4/17/2024
-#
+# Date: 17/04/2024
 # Version: v1
-#
-# This script will report the AWS resources usage
 
 ####################
 # AWS S3
@@ -19,7 +16,7 @@ aws s3 ls
 
 # list EC2 instances
 echo "print list of EC2 instances"
-aws ec2 describe-instance | jq 'Reservations[].Instances[].InstanceId'
+aws ec2 describe-instance 
 
 # list lambda
 echo "print list of lambda functions"
